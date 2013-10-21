@@ -30,10 +30,6 @@ class HyperMediaBehavior extends CActiveRecordBehavior
                 $this->_expand = trim($this->_expand,' ');
                 $this->_expand = explode(',',$this->_expand);
             }
-            else
-            {
-                $this->_expand = array($this->_expand);
-            }
         }
         else
         {
@@ -121,6 +117,7 @@ class HyperMediaBehavior extends CActiveRecordBehavior
         {
             if($model->getRelated($relationName) !== null)
             {
+
                 $hrefOnly = !in_array($relationName, $this->expand);
                 if(is_array($model->getRelated($relationName)))
                 {
