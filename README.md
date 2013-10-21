@@ -7,7 +7,6 @@ Usage
 ==================
 ```php
 <?php
-//this is a modified version of loadModel from yiiwheels
 
 public function actionView($id)
 {
