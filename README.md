@@ -40,21 +40,21 @@ Request:
 GET http://localhost/myApp/api/v1/user/1?expand=profile
 ```json
 {
-        href: "/myApp/api/v1/user/1",
-        id: "1",
-        username: "admin",
-        email: "admin@myApp.biz",
-        created_at: "2013-10-11 21:04:52",
-        last_visit: "0000-00-00 00:00:00",
-        status: "1",
-        profile: {
-                href: "/myApp/api/v1/profile/1",
-                id: "1",
-                user_id: "1",
-                first_name: "admin",
-                middle_name: null,
-                last_name: "admin",
-                image_path: null
+        "href": "/myApp/api/v1/user/1",
+        "id": "1",
+        "username": "admin",
+        "email": "admin@myApp.biz",
+        "created_at": "2013-10-11 21:04:52",
+        "last_visit": "0000-00-00 00:00:00",
+        "status": "1",
+        "profile": {
+                "href": "/myApp/api/v1/profile/1",
+                "id": "1",
+                "user_id": "1",
+                "first_name": "admin",
+                "middle_name": null,
+                "last_name": "admin",
+                "image_path": null
         }
 }
 ```
